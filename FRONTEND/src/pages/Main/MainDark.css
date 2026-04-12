@@ -1,0 +1,122 @@
+:root {
+  /* LIGHT MODE (default) */
+  
+  --pink-light: #ff9aa2;
+  --pink-baby: #ff6b81;
+  --background: #c4c0c0;
+  --text-color: #ffffff;
+
+  --font-main: "Inter", sans-serif;
+}
+
+/* DARK MODE */
+.dark {
+}
+
+/* MAIN */
+.main {
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--pink-baby);
+  font-family: var(--font-main);
+}
+
+/* BOTÕES */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-login {
+  background-color: var(--pink-baby);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: var(--font-main);
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: var(--pink-baby);
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid var(--pink-baby);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: var(--font-main);
+}
+
+/* HERO */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+/* TEXTOS */
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: var(--font-main);
+  color: var(--text-color);
+}
+
+.hero h1 span {
+  color: var(--pink-baby);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-color);
+  max-width: 600px;
+  font-family: var(--font-main);
+  opacity: 0.7;
+}
+
+/* BOTÃO START */
+.btn-start {
+  background-color: var(--pink-baby);
+  color: white;
+  padding: 14px 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--font-main);
+}
