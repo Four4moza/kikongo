@@ -14,13 +14,13 @@ function Main() {
 
         <div className="nav-buttons">
 
-          <Link to="">
+          <Link to="/login">
             <button className="btn-login">
               entrar
             </button>
           </Link>
 
-          <Link to="">
+          <Link to="/signup">
             <button className="btn-signup">
               cadastrar
             </button>
@@ -38,11 +38,10 @@ function Main() {
         </h1>
 
         <p>
-          Conecte-se com as suas raízes Bakongo através do Kikongo,
-          preserve e valorize a cultura Angolana.
+          Conecte-se com as suas raízes Bakongo através do Kikongo, preserve e valorize a cultura Angolana.
         </p>
 
-        <Link to="/lesson">
+        <Link to="/login">
           <button className="btn-start">
             começar →
           </button>

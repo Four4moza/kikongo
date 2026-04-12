@@ -1,0 +1,77 @@
+.card {
+  width: 360px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: "Inter", sans-serif;
+
+  transition: 0.3s ease;
+}
+
+/* TÍTULO */
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e57373;
+  margin: 0;
+}
+
+/* CONTEÚDO INTERNO */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+/* INPUTS */
+.card input {
+  padding: 12px 15px;
+  border-radius: 180px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.card input:focus {
+  border-color: #e57373;
+  box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.2);
+}
+
+/* BOTÃO */
+.card button {
+  padding: 12px;
+  border-radius: 180px;
+  border: none;
+
+  background: #e57373;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: #d95f5f;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}

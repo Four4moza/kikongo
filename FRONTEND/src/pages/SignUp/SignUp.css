@@ -1,0 +1,69 @@
+:root {
+  --pink-baby: #e57373;
+  --pink-light: #f8c8c8;
+  --background: #fffbfb;
+
+  --white: #ffffff;
+  --font-main: "Inter", sans-serif;
+}
+
+
+.signup-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+background-color: var(--background);
+  font-family: var(--font-main);
+}
+
+
+.signup-logo {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--pink-baby);
+}
+
+
+.signup-footer {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}
+
+.signup-footer a {
+  color: var(--pink-baby);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+.top-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.back-btn {
+  background: #e57373;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+font-weight: bold;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #d95f5f;
+  transform: translateY(-2px);
+}

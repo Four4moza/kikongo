@@ -2,7 +2,7 @@
   /* cores */
   --pink-light: #f8c8c8;
   --pink-baby: #e57373;
-  --background: #f2f0f0;
+  --background: #fffbfb;
 
   /* font*/
   --font-main: "Inter", sans-serif;
@@ -11,7 +11,7 @@
 
 .main {
   height: 100vh;
-  background-color: var(--background);
+  background-color: #fffbfb;
   display: flex;
   flex-direction: column;
 }
@@ -43,7 +43,6 @@
   font-family: var(--font-main);
 }
 
-/* BOTÕES TOPO */
 .nav-buttons {
   display: flex;
   gap: 15px;
@@ -56,7 +55,7 @@
   border-radius: 25px;
   border: 2px solid white;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: bold;
   font-family: var(--font-main);
 }
 
@@ -67,7 +66,7 @@
   border-radius: 25px;
   border: 2px solid var(--pink-baby);
   cursor: pointer;
-  font-weight: 500;
+  font-weight: bold;
   font-family: var(--font-main);
 }
 
@@ -87,6 +86,7 @@
   font-size: 48px;
   font-weight: bold;
   font-family: var(--font-main);
+  color: black;
 }
 
 .hero h1 span {
@@ -96,9 +96,9 @@
 
 
 .hero p {
-  font-size: 18px;
+  font-size: 19px;
   color: gray;
-  max-width: 600px;
+  line-height: 1.5;
   font-family: var(--font-main);
 }
 
