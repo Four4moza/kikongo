@@ -20,7 +20,7 @@ export default function Signup() {
       
       <div className="signup-page">
 
-        <h1 className="signup-logo">Mwana</h1>
+        <h1 className="signup-logo">Seja um Mwana</h1>
 
         <Card title="Sign Up">
 

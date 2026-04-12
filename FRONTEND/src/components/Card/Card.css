@@ -24,7 +24,6 @@
   margin: 0;
 }
 
-/* CONTEÚDO INTERNO */
 .card-content {
   display: flex;
   flex-direction: column;
@@ -47,7 +46,6 @@
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.2);
 }
 
-/* BOTÃO */
 .card button {
   padding: 12px;
   border-radius: 180px;
@@ -64,11 +62,14 @@
 }
 
 .card button:hover {
-  background: #d95f5f;
+
+  background: white;
+  color: #e57373;
+    border: 2px solid #e57373;
   transform: translateY(-2px);
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 500px) {
   .card {
     width: 90%;
