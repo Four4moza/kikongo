@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   /* cores */
   --pink-light: #f8c8c8;
@@ -7,6 +10,30 @@
   /* font*/
   --font-main: "Inter", sans-serif;
 }
+.philosopher-regular {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.philosopher-bold {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mwana-italic {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.philosopher-bold-italic {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 
 .main {
@@ -30,18 +57,19 @@
   align-items: center;
   gap: 10px;
 }
+.mwana {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  color: var(--pink-baby);
+}
 
 .logo img {
   width: 40px;
   height: 40px;
 }
 
-.logo span {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--pink-baby);
-  font-family: var(--font-main);
-}
 
 .nav-buttons {
   display: flex;
@@ -83,10 +111,14 @@
 
 
 .hero h1 {
+  font-family:"mwana-italic";
   font-size: 48px;
   font-weight: bold;
   font-family: var(--font-main);
   color: black;
+  font-style: italic;
+  
+  
 }
 
 .hero h1 span {

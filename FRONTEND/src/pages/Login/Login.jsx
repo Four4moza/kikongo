@@ -14,6 +14,9 @@ import { useNavigate } from "react-router-dom"
       flexDirection: "column",
     }}>
        <header className="top-header">
+         <div className="logo">
+          <span className="mwana">Mwana</span>
+        </div>
   <button
     className="back-btn"
     onClick={() => navigate("/")}
@@ -21,7 +24,7 @@ import { useNavigate } from "react-router-dom"
      home
   </button>
 </header>
-      <h1>Mwana</h1>
+
       <Card title="Entrar">
         <label htmlFor="email">Email</label>
         <input id="email" placeholder="example@gmail.com" />

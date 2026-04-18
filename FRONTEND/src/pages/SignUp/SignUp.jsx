@@ -9,6 +9,9 @@ export default function Signup() {
     <div>
 
       <header className="top-header">
+         <div className="logo">
+          <span className="mwana">Mwana</span>
+        </div>
         <button
           className="back-btn"
           onClick={() => navigate("/")}
@@ -20,7 +23,8 @@ export default function Signup() {
       
       <div className="signup-page">
 
-        <h1 className="signup-logo">Seja um Mwana</h1>
+        <h1 className="signup-logo">Seja um </h1>
+        <span className="mwana">Mwana</span>
 
         <Card title="Sign Up">
 

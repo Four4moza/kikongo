@@ -9,7 +9,7 @@ function Main() {
       <header className="navbar">
 
         <div className="logo">
-          <span>Mwana</span>
+          <span className="mwana">Mwana</span>
         </div>
 
         <div className="nav-buttons">

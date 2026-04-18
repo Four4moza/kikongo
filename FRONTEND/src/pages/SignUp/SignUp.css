@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --pink-baby: #e57373;
   --pink-light: #f8c8c8;
@@ -23,8 +25,14 @@ background-color: var(--background);
   margin-bottom: 20px;
   font-size: 32px;
   font-weight: bold;
-  color: var(--pink-baby);
+  color: black;
   font-family: var(--font-main);
+}
+.mwana {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--pink-baby);
 }
 
 
@@ -44,10 +52,26 @@ background-color: var(--background);
   text-decoration: underline;
 }
 .top-header {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 550px;
+}
+.mwana {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  color: var(--pink-baby);
+}
+
 
 .back-btn {
   background: #e57373;
@@ -66,3 +90,16 @@ font-weight: bold;
   background: #d95f5f;
   transform: translateY(-2px);
 }
+@media (max-width: 500px) {
+
+  .card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+}
+
