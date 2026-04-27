@@ -13,7 +13,6 @@ function Main() {
         </div>
 
         <div className="nav-buttons">
-
           <Link to="/login">
             <button className="btn-login">
               entrar

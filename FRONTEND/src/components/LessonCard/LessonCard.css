@@ -1,0 +1,119 @@
+.card {
+  background: white;
+  padding: 22px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+
+  transition: 0.25s;
+}
+
+/* Hover animation */
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Colors */
+
+.red { color: #ff4d30; }
+.blue { color: #3b82f6; }
+.green { color: #4caf50; }
+.orange { color: #ff5722; }
+
+/* Progress */
+
+.progress-section {
+  margin-bottom: 20px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #eee;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #d4db23;
+
+  transition: 0.4s;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  flex: 1;
+
+  padding: 10px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: #d4db23;
+
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #c2c820;
+}
+
+.btn-outline {
+  flex: 1;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  border: 2px solid #d4db23;
+
+  background: transparent;
+
+  color: #d4db23;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #d4db23;
+  color: white;
+}
