@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+ height: 100vh;
+}
 
 :root {
   /* cores */
@@ -63,17 +68,22 @@
   font-style: italic;
   font-size: 28px;
   color: var(--pink-baby);
+  position: absolute;
+  left: 200px;
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
+  width: 200px;
+  height: auto;
+  mix-blend-mode: multiply;
+  position: relative;
 }
 
 
 .nav-buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn-login {
@@ -107,11 +117,23 @@
   align-items: center;
   gap: 25px;
   text-align: center;
+animation: slideDown 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
+
 .hero h1 {
-  font-family:"mwana-italic";
   font-size: 48px;
   font-weight: bold;
   font-family: var(--font-main);
@@ -137,12 +159,12 @@
 
 .btn-start {
   background-color: var(--pink-baby);
-  color: white;
+  color: black;
   padding: 14px 40px;
   border-radius: 30px;
   border: none;
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
-  font-family: var(--font-main);
+  font-family: sans-serif;
 }

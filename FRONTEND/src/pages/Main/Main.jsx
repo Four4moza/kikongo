@@ -1,5 +1,6 @@
 import "./Main.css"
 import { Link } from "react-router-dom"
+import logo from "../../assets/palanca-negra-rosa.png"
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <header className="navbar">
 
         <div className="logo">
+          <img src={logo} alt="Logo" />
           <span className="mwana">Mwana</span>
         </div>
 
