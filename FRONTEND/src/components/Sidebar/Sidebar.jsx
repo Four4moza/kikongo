@@ -5,8 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-
-      <h2 className="logo">Mwana</h2>
+      <h2 className="mwana-italic">Mwana</h2>
 
       <nav>
 
@@ -15,17 +14,17 @@ export default function Sidebar() {
           Página inicial
         </NavLink>
 
-        <NavLink to="/lessons" className="menu-item">
+        <NavLink to="/lesson" className="menu-item">
           <BookOpen size={22} />
           Lições
         </NavLink>
 
-        <NavLink to="/favorites" className="menu-item">
+        <NavLink to="/favorite" className="menu-item">
           <Star size={22} />
           Favoritos
         </NavLink>
 
-        <NavLink to="/profile" className="menu-item">
+        <NavLink to="/perfil" className="menu-item">
           <User size={22} />
           Perfil
         </NavLink>

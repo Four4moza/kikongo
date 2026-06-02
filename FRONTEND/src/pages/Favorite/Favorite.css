@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.favorite-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.favoritos {
+    flex: 1;
+    padding: 35px;
+    overflow-y: auto;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADER */
+.favoritos__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* TÍTULO */
+.favoritos__title {
+    font-size: 30px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.favoritos__subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-top: 6px;
+}
+
+/* SEARCH BAR (visual moderno tipo glass) */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    padding: 10px 14px;
+    border-radius: 180px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.2s ease;
+}
+
+.search-bar:focus-within {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+/* GRID DE CARDS */
+.favoritos__list {
+    display: grid;
+    gap: 22px;
+}
+
+/* CARD MODERNO */
+.word-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.word-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* linha on top do card */
+.word-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    background: #e57373;
+}
+
+/* TEXTO */
+.word-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.pronu {
+    font-size: 14px;
+    color: #777 !important;
+    margin-bottom: 8px;
+}
+
+.word-card .translation {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 4px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.lol {
+    margin-left: 800px;
+}
+
+.ouvir {
+    border: none;
+    background: transparent;
+    BORDER-RADIUS: 100%;
+    font-size: 40px;
+    color: #e57373;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+
+/* botao */
+.word-card button.nao {
+    margin-top: 12px;
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 100%;
+
+
+    color: red;
+
+    cursor: pointer;
+    font-size: 15px;
+
+    transition: 0.2s ease;
+}
+
+
+.word-card button:hover {
+    transform: scale(1.05);
+}
+
+
+/* estado vazio*/
+.favoritos__empty {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin-top: 60px;
+    opacity: 0.8;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .favoritos {
+        padding: 20px;
+    }
+
+    .favoritos__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

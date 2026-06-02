@@ -21,7 +21,7 @@ import { useNavigate } from "react-router-dom"
     className="back-btn"
     onClick={() => navigate("/")}
   >
-     home
+     sair→
   </button>
 </header>
 
@@ -30,7 +30,7 @@ import { useNavigate } from "react-router-dom"
         <input id="email" placeholder="example@gmail.com" />
         <label htmlFor="password">Password</label>
         <input id="password" placeholder="password" type="password" />
-  <a href="/forgot-password" className="forgot-password">Esqueci a senha</a>
+  <a href="/forgot-password" className="forgot-password">Esqueceu a senha? Redefinir</a>
         <button id="entrar-btn">Entrar</button>
           <a href="/signup" className="signup-link" >Não tens conta? <span style={{ color: "#e57373" }}>Seja um Mwana</span></a>
       </Card>

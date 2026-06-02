@@ -35,6 +35,18 @@ export default function Lessons() {
       progress: 40,
       icon: <Utensils size={28} />,
       color: "orange"
+    },
+     {
+      title: "Família",
+      progress: 0,
+      icon: <Users size={28} />,
+      color: "green"
+    },
+    {
+      title: "Comida e bebida",
+      progress: 40,
+      icon: <Utensils size={28} />,
+      color: "orange"
     }
   ];
 

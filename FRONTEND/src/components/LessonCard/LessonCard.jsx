@@ -6,13 +6,12 @@ export default function LessonCard({
   icon,
   color
 }) {
-
   return (
-    <div className="card">
+    <div className="lesson-card">
 
-      <div className="card-header">
+      <div className="lesson-card-header">
 
-        <div className={`icon ${color}`}>
+        <div className={`lesson-card-icon ${color}`}>
           {icon}
         </div>
 
@@ -20,29 +19,29 @@ export default function LessonCard({
 
       </div>
 
-      <div className="progress-section">
+      <div className="lesson-progress-section">
 
-        <div className="progress-info">
+        <div className="lesson-progress-info">
           <span>Progresso</span>
           <span>{progress}%</span>
         </div>
 
-        <div className="progress-bar">
+        <div className="lesson-progress-bar">
           <div
-            className="progress-fill"
+            className="lesson-progress-fill"
             style={{ width: `${progress}%` }}
           />
         </div>
 
       </div>
 
-      <div className="buttons">
+      <div className="lesson-card-buttons">
 
-        <button className="btn-primary">
+        <button className="lesson-btn-primary">
           Continuar
         </button>
 
-        <button className="btn-outline">
+        <button className="lesson-btn-secondary">
           Quizz
         </button>
 

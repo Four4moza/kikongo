@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-  /* cores */
+  /* colours */
   --pink-light: #f8c8c8;
   --pink-baby: #e57373;
   --background: #fffbfb;
@@ -37,6 +37,9 @@ body {
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   font-style: italic;
+  color: var(--pink-baby);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 
@@ -46,16 +49,15 @@ body {
   background-color: #fffbfb;
   display: flex;
   flex-direction: column;
+  
 }
 
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
+  padding: 15px 30px;
 }
-
 
 .logo {
   display: flex;
@@ -81,31 +83,33 @@ body {
 
 
 .nav-buttons {
+  margin-left: 1000px;
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.btn-login {
-  background-color: var(--pink-baby);
-  color: white;
+.btn-login,
+.btn-signup {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   padding: 10px 25px;
   border-radius: 25px;
-  border: 2px solid white;
-  cursor: pointer;
   font-weight: bold;
   font-family: var(--font-main);
+  cursor: pointer;
 }
-
+.btn-login {
+  width: 100px;
+  background-color: var(--pink-baby);
+  color: white;
+  border: 2px solid white;
+}
 .btn-signup {
   background-color: transparent;
   color: var(--pink-baby);
-  padding: 10px 25px;
-  border-radius: 25px;
   border: 2px solid var(--pink-baby);
-  cursor: pointer;
-  font-weight: bold;
-  font-family: var(--font-main);
 }
 
 
@@ -143,11 +147,10 @@ animation: slideDown 1s cubic-bezier(0.22, 1, 0.36, 1);
   
 }
 
-.hero h1 span {
+.hero h1 span.philosopher-bold-italic {
   color: var(--pink-baby);
   font-family: var(--font-main);
 }
-
 
 .hero p {
   font-size: 19px;

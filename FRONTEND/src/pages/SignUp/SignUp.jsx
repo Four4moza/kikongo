@@ -12,21 +12,19 @@ export default function Signup() {
          <div className="logo">
           <span className="mwana">Mwana</span>
         </div>
+        
         <button
           className="back-btn"
           onClick={() => navigate("/")}
         >
-          home
+          sair→
         </button>
       </header>
 
       
-      <div className="signup-page">
+      <div className="signup-page">  
 
-        <h1 className="signup-logo">Seja um </h1>
-        <span className="mwana">Mwana</span>
-
-        <Card title="Sign Up">
+        <Card title="Criar conta">
 
           <label htmlFor="name">Nome</label>
           <input id="name" placeholder="Teu nome" />
@@ -40,10 +38,10 @@ export default function Signup() {
           <label htmlFor="confirm">Confirmar Palavra-passe</label>
           <input id="confirm" type="password" placeholder="confirmar palavra-passe" />
 
-          <button>Criar conta</button>
+          <button className="btn-signup">Criar conta</button>
 
           <p className="signup-footer">
-            Já tens conta? <a href="/login">Entrar</a>
+            Já és um Mwana? <a href="/login">Entrar</a>
           </p>
 
         </Card>

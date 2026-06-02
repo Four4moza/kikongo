@@ -1,119 +1,125 @@
-.card {
+.lesson-card {
   background: white;
   padding: 22px;
-
   border-radius: 14px;
-
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   transition: 0.25s;
 }
 
-/* Hover animation */
-
-.card:hover {
+.lesson-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 18px rgba(0,0,0,0.12);
 }
 
-.card-header {
+.lesson-card-header {
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   gap: 12px;
-
   margin-bottom: 15px;
 }
 
-.icon {
+.lesson-card-icon {
   padding: 10px;
   border-radius: 10px;
 }
 
-/* Colors */
+/* Cores dos ícones */
 
-.red { color: #ff4d30; }
-.blue { color: #3b82f6; }
-.green { color: #4caf50; }
-.orange { color: #ff5722; }
+.red {
+  color: #ff4d30;
+}
 
-/* Progress */
+.blue {
+  color: #3b82f6;
+}
 
-.progress-section {
+.green {
+  color: #4caf50;
+}
+
+.orange {
+  color: #ff5722;
+}
+
+/* Progresso */
+
+.lesson-progress-section {
   margin-bottom: 20px;
 }
 
-.progress-info {
+.lesson-progress-info {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-
   margin-bottom: 6px;
 }
 
-.progress-bar {
+.lesson-progress-bar {
   height: 8px;
   background: #eee;
-
   border-radius: 10px;
   overflow: hidden;
 }
 
-.progress-fill {
+.lesson-progress-fill {
   height: 100%;
   background: #d4db23;
-
   transition: 0.4s;
 }
 
-/* Buttons */
+/* Botões */
 
-.buttons {
+.lesson-card-buttons {
   display: flex;
   gap: 12px;
 }
 
-.btn-primary {
+.lesson-btn-primary {
   flex: 1;
-
   padding: 10px;
-
   border-radius: 10px;
   border: none;
-
   background: #d4db23;
-
   color: white;
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
-.btn-primary:hover {
+.lesson-btn-primary:hover {
   background: #c2c820;
 }
 
-.btn-outline {
+.lesson-btn-primary:active {
+  transform: scale(0.98);
+}
+
+.lesson-btn-secondary {
   flex: 1;
-
   padding: 10px;
-
   border-radius: 10px;
-
   border: 2px solid #d4db23;
-
   background: transparent;
-
   color: #d4db23;
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
-.btn-outline:hover {
+.lesson-btn-secondary:hover {
   background: #d4db23;
   color: white;
+}
+
+.lesson-btn-secondary:active {
+  transform: scale(0.98);
+}
+span {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
 }

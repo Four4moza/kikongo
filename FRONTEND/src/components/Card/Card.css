@@ -2,10 +2,8 @@
   width: 360px;
   padding: 30px;
   border-radius: 20px;
-
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
+  background: white;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -31,13 +29,13 @@
   font-family: "Inter", sans-serif;
 }
 
-/* INPUTS */
+/* inputs */
 .card input {
-  padding: 12px 15px;
+  padding: 16px 19px;
   border-radius: 180px;
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.2s;
 }
 
@@ -47,7 +45,7 @@
 }
 
 .card button {
-  padding: 12px;
+  padding: 16px 13px;
   border-radius: 180px;
   border: none;
 

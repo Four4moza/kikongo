@@ -203,7 +203,9 @@ h1 {
 }
 
 .back-btn:hover {
-    background: #d95f5f;
+    background:white;
+    border: 2px solid #e57373;
+    color: #e57373;
     transform: translateY(-2px);
 }
 
@@ -212,4 +214,10 @@ h1 {
         width: 90%;
         padding: 25px;
     }
+}
+.btn-login {
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
 }

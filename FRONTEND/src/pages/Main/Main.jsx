@@ -1,41 +1,36 @@
-import "./Main.css"
-import { Link } from "react-router-dom"
-import logo from "../../assets/palanca-negra-rosa.png"
+import "./Main.css";
+import { Link } from "react-router-dom";
+import logo from "../../assets/palanca-negra-rosa.png";
 
 function Main() {
   return (
     <div className="main">
 
-      
       <header className="navbar">
 
         <div className="logo">
           <img src={logo} alt="Logo" />
           <span className="mwana">Mwana</span>
-        </div>
-
         <div className="nav-buttons">
-          <Link to="/login">
-            <button className="btn-login">
-              entrar
-            </button>
+
+          <Link to="/login" className="btn-login">
+            Entrar
           </Link>
 
-          <Link to="/signup">
-            <button className="btn-signup">
-              cadastrar
-            </button>
+          <Link to="/signup" className="btn-signup">
+            Registrar
           </Link>
 
         </div>
+        </div>
+
 
       </header>
-
 
       <div className="hero">
 
         <h1>
-          Aprenda a falar <span>kikongo</span>
+          Aprenda a falar <span className="philosopher-bold-italic">kikongo</span>
         </h1>
 
         <p>
@@ -51,7 +46,7 @@ function Main() {
       </div>
 
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
